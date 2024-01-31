@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Student</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <%if(student){%>
+    <div class="student-container"></div>
+    <img src="<%=student.profile%>" alt="profile picture">
+    <div>
+        <p><span>Name: <%=student.name%></span></p>
+        <p><span>Major: <%=student.major%></span></p>
+        <p><span>GPA: <%=student.gpa%></span></p>
+    </div>
+    </div>
+    <%}else{%>
+        <p>No student matches the ID</p>
+    <%}%>
+</body>
+</html>
