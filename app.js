@@ -31,7 +31,7 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/students', (req,res)=>{
-    res.json(students);
+    res.render('students', {students});
 });
 
 app.post('/students', upload, (req,res)=>{
@@ -44,7 +44,6 @@ app.post('/students', upload, (req,res)=>{
 
 app.get('/students/new', (req,res)=>{
     res.render('new');
-
 });
 
 app.get('/students/:sid', (req, res)=>{

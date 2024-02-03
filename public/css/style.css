@@ -15,6 +15,9 @@ body {
 h2 {
     margin-bottom: 1rem;
 }
+.students-container{
+    display: flex;
+}
 
 .student-container {
     display: flex;

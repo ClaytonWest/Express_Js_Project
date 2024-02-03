@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>All followers</title>
+</head>
+<body>
+    <h2>Students</h2>
+    <% if(students.length > 0) { %>
+        <div class="students-container">
+            <% students.forEach(student => { %>
+                <img src="<%=student.profile%>" alt="Profile picture">
+                <p><%= student.name %></p>
+            <%}); %>
+        </div>
+    <% } else {%>
+        <p> No students found.</p>
+    <%}%>
+</body>
+</html>
